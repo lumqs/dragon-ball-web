@@ -44,8 +44,9 @@ Los datos se procesan en el sitio para calcular el poder total de cada equipo.
 
 ## 👨‍💻 Autor
 
--**Lucas Marques**
--**Micaela Astrada**
+**Lucas Marques**
+
+**Micaela Astrada**
 📚 Proyecto para la cátedra de *Desarrollo Web*  
 📅 Noviembre 2025  
 
