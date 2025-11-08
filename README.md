@@ -1,6 +1,6 @@
 # 🐉 Dragon Ball Battle
 
-Proyecto realizado como parte del **Trabajo Práctico Integrador de Desarrollo Web (UTN)**.  
+Proyecto realizado como parte del **Trabajo Práctico Integrador de Desarrollo Web**.  
 El sitio utiliza la **Dragon Ball API** para mostrar personajes del universo Dragon Ball y simular una **batalla automática** entre dos equipos.
 
 ---
@@ -46,9 +46,8 @@ Los datos se procesan en el sitio para calcular el poder total de cada equipo.
 
 **Lucas Marques**
 **Micaela Astrada**
-📚 Proyecto para la cátedra de *Desarrollo Web (UTN)*  
+📚 Proyecto para la cátedra de *Desarrollo Web*  
 📅 Noviembre 2025  
 
 ---
 
-✨ *“Kamehameha de código limpio y responsive.”*
