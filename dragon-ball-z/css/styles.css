@@ -270,18 +270,17 @@ input, select, textarea {
 /*  1 fila con 3 columnas + espacio + 3 columnas */
 .battle {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 2rem; /* espacio general entre equipo (team-block) y vs */
-  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
   padding: 1rem;
 }
 
-/* Cada bloque de equipo: título arriba y contenedor de cards en fila */
 .team-block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%; /* Ocupa todo el ancho en mobile */
 }
 
 /* Título encima del grupo */
@@ -296,21 +295,23 @@ input, select, textarea {
   display: flex;
   gap: 1rem;
   align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;         
+  width: 100%;
 }
 
 /* VS centrado y separado */
 .vs {
-  font-size: 2rem;
+font-size: 2rem;
   font-weight: 800;
   color: var(--color-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0.4rem 0;
 }
 
 
 .card.small {
-  width: 230px;
+  width: 90%;
+  max-width: 230px;
   background: #1a1a1a;
   border-radius: var(--radius);
   overflow: hidden;
@@ -410,21 +411,34 @@ input, select, textarea {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .card.small { width: 230px; }
 }
 
-/* Responsive: en pantallas pequeñas pasan a columna */
-@media (max-width: 800px) {
+
+@media (min-width: 768px) {
+
   .battle {
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-  .team {
+    flex-direction: row; /* TABLET: Vuelve a ser fila */
+    align-items: flex-start;
     justify-content: center;
+    gap: 2rem;
   }
-  .card.small { width: 200px; } /* un poco más ancho en celualr */
-  .vs { margin: 0.4rem 0; }
-}
 
+  .team {
+    flex-wrap: nowrap; /* Evita que las 3 cards bajen */
+  }
+
+  .vs {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    min-height: 350px;
+  }
+
+  .card.small {
+    width: 200px;
+  }
+}
 
 /* ===== ANIMACIONES ===== */
 @keyframes fadeIn {
