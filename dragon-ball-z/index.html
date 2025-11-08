@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batalla Dragon Ball</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1><img src="img/esfera.png" alt="Imagen de esfera" style="width: 50px; height: auto; margin-bottom: -12px; margin-right: 7px;">Batalla Dragon Ball</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="about.html">Sobre Nosotros</a>
+    </nav>
+  </header>
+  <main class="battle-container">
+    <div id="loader" class="loader">Cargando...</div>
+    <div id="error" style="color:tomato"></div>
+    <section class="battle" aria-label="Batalla">
+      <div class="team-block">
+        <h3 class="team-title">Equipo A</h3>
+        <div id="teamA" class="team"></div>
+      </div>
+      <div class="vs">VS</div>
+      <div class="team-block">
+        <h3 class="team-title">Equipo B</h3>
+        <div id="teamB" class="team"></div>
+      </div>
+    </section>
+    <div class="result" id="result"></div>
+    <div style="text-align:center; margin-top:10px">
+      <button id="newBattle">🔥 Nueva Batalla</button>
+    </div>
+  </main>
+  <footer>
+    <p>Lucas Marques — Proyecto Dragon Ball — Micaela Astrada
+      
+    </p>
+    <p>
+      <a href="https://github.com/tu-repo" target="_blank">GitHub</a>
+    </p>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
